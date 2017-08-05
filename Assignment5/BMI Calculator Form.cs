@@ -13,7 +13,7 @@ using System.Windows.Forms;
  * Student number: 300910503
  * Date: August, 4, 2017
  * Description: BMI Calculator Project
- * Version: 0.1 - created the project
+ * Version: 0.2 - created the project
  */
 
 namespace Assignment5
@@ -23,6 +23,31 @@ namespace Assignment5
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BMITextBoxControl_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
