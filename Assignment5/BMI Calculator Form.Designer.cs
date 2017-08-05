@@ -40,7 +40,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Snow;
+            this.button2.BackColor = System.Drawing.Color.MistyRose;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.button2.ForeColor = System.Drawing.Color.Firebrick;
