@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
+            this.CalculateBMIButton = new System.Windows.Forms.Button();
             this.Height = new System.Windows.Forms.Label();
             this.Weight = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.HeightTextBox = new System.Windows.Forms.TextBox();
+            this.WeightTextBox = new System.Windows.Forms.TextBox();
+            this.MetricButton = new System.Windows.Forms.RadioButton();
+            this.ImperialButton = new System.Windows.Forms.RadioButton();
             this.BMITextBoxControl = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button2
+            // CalculateBMIButton
             // 
-            this.button2.BackColor = System.Drawing.Color.MistyRose;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.button2.ForeColor = System.Drawing.Color.Firebrick;
-            this.button2.Location = new System.Drawing.Point(83, 220);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 42);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Calculate BMI";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.CalculateBMIButton.BackColor = System.Drawing.Color.MistyRose;
+            this.CalculateBMIButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CalculateBMIButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.CalculateBMIButton.ForeColor = System.Drawing.Color.Firebrick;
+            this.CalculateBMIButton.Location = new System.Drawing.Point(83, 220);
+            this.CalculateBMIButton.Name = "CalculateBMIButton";
+            this.CalculateBMIButton.Size = new System.Drawing.Size(137, 42);
+            this.CalculateBMIButton.TabIndex = 1;
+            this.CalculateBMIButton.Text = "Calculate BMI";
+            this.CalculateBMIButton.UseVisualStyleBackColor = false;
+            this.CalculateBMIButton.Click += new System.EventHandler(this.button2_Click);
             // 
             // Height
             // 
@@ -75,57 +75,57 @@
             this.Weight.TabIndex = 5;
             this.Weight.Text = "My weight";
             // 
-            // textBox1
+            // HeightTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Snow;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.textBox1.ForeColor = System.Drawing.Color.IndianRed;
-            this.textBox1.Location = new System.Drawing.Point(93, 90);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(114, 25);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.HeightTextBox.BackColor = System.Drawing.Color.Snow;
+            this.HeightTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.HeightTextBox.ForeColor = System.Drawing.Color.IndianRed;
+            this.HeightTextBox.Location = new System.Drawing.Point(93, 90);
+            this.HeightTextBox.Multiline = true;
+            this.HeightTextBox.Name = "HeightTextBox";
+            this.HeightTextBox.Size = new System.Drawing.Size(114, 25);
+            this.HeightTextBox.TabIndex = 8;
+            this.HeightTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // WeightTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Snow;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.textBox2.ForeColor = System.Drawing.Color.IndianRed;
-            this.textBox2.Location = new System.Drawing.Point(93, 161);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(114, 25);
-            this.textBox2.TabIndex = 9;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.WeightTextBox.BackColor = System.Drawing.Color.Snow;
+            this.WeightTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.WeightTextBox.ForeColor = System.Drawing.Color.IndianRed;
+            this.WeightTextBox.Location = new System.Drawing.Point(93, 161);
+            this.WeightTextBox.Multiline = true;
+            this.WeightTextBox.Name = "WeightTextBox";
+            this.WeightTextBox.Size = new System.Drawing.Size(114, 25);
+            this.WeightTextBox.TabIndex = 9;
+            this.WeightTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // radioButton1
+            // MetricButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.radioButton1.ForeColor = System.Drawing.Color.Firebrick;
-            this.radioButton1.Location = new System.Drawing.Point(46, 16);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(76, 26);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Metric";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.MetricButton.AutoSize = true;
+            this.MetricButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MetricButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.MetricButton.ForeColor = System.Drawing.Color.Firebrick;
+            this.MetricButton.Location = new System.Drawing.Point(46, 16);
+            this.MetricButton.Name = "MetricButton";
+            this.MetricButton.Size = new System.Drawing.Size(76, 26);
+            this.MetricButton.TabIndex = 10;
+            this.MetricButton.TabStop = true;
+            this.MetricButton.Text = "Metric";
+            this.MetricButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // ImperialButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.radioButton2.ForeColor = System.Drawing.Color.Firebrick;
-            this.radioButton2.Location = new System.Drawing.Point(167, 16);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(90, 26);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Imperial";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.ImperialButton.AutoSize = true;
+            this.ImperialButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImperialButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.ImperialButton.ForeColor = System.Drawing.Color.Firebrick;
+            this.ImperialButton.Location = new System.Drawing.Point(167, 16);
+            this.ImperialButton.Name = "ImperialButton";
+            this.ImperialButton.Size = new System.Drawing.Size(90, 26);
+            this.ImperialButton.TabIndex = 11;
+            this.ImperialButton.TabStop = true;
+            this.ImperialButton.Text = "Imperial";
+            this.ImperialButton.UseVisualStyleBackColor = true;
             // 
             // BMITextBoxControl
             // 
@@ -147,13 +147,13 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(304, 441);
             this.Controls.Add(this.BMITextBoxControl);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ImperialButton);
+            this.Controls.Add(this.MetricButton);
+            this.Controls.Add(this.WeightTextBox);
+            this.Controls.Add(this.HeightTextBox);
             this.Controls.Add(this.Weight);
             this.Controls.Add(this.Height);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.CalculateBMIButton);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.ForeColor = System.Drawing.Color.Crimson;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -168,13 +168,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button CalculateBMIButton;
         private System.Windows.Forms.Label Height;
         private System.Windows.Forms.Label Weight;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.TextBox HeightTextBox;
+        private System.Windows.Forms.TextBox WeightTextBox;
+        private System.Windows.Forms.RadioButton MetricButton;
+        private System.Windows.Forms.RadioButton ImperialButton;
         private System.Windows.Forms.TextBox BMITextBoxControl;
     }
 }
