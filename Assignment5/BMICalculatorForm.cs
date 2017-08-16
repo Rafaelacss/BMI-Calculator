@@ -13,12 +13,12 @@ using System.Windows.Forms;
  * Student number: 300910503
  * Date: August, 15, 2017
  * Description: BMI Calculator Project
- * Version: 0.2 - implemented bmi calculation
+ * Version: 0.3 - implemented usercondition scale bonus
  */
 
 namespace BMICalculator
 {
-    public partial class Form1 : Form
+    public partial class BMICalculatorForm : Form
     {
         //Private variables
         private double _height;
@@ -61,7 +61,7 @@ namespace BMICalculator
             }
         }
 
-        public Form1()
+        public BMICalculatorForm()
         {
             InitializeComponent();
         }
@@ -87,9 +87,33 @@ namespace BMICalculator
             }
             
 
-            BMITextBoxControl.Text = Convert.ToString(Result);
+            BMITextBoxControl.Text = Convert.ToString(Math.Round(Result,1));
 
+            if (Result < 18.5)
+            {
+                UserCondition.Text = "You are Underweight";
+                UserCondition.BackColor = Color.DodgerBlue;
+            }
+            else if ((Result >= 18.5) && (Result < 25))
+            {
+                UserCondition.Text = "You are Normal";
+                UserCondition.BackColor = Color.YellowGreen;
+            }
+            else if ((Result >= 25) && (Result < 29.9))
+            {
+                UserCondition.Text = "You are Overweight";
+                UserCondition.BackColor = Color.Coral;
+            }
+            else
+            {
+                UserCondition.Text = "You are Obese";
+                UserCondition.BackColor = Color.Red;
+            }
+        }
 
+        private void BMICalculatorForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

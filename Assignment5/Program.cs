@@ -19,12 +19,19 @@ namespace BMICalculator
         /// <summary>
         /// The BMI Calculator will calculate the standard body mass of a person
         /// </summary>
+
+        public static BMICalculatorForm bmiCalculatorForm;
+
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-        }
+
+
+            bmiCalculatorForm = new BMICalculatorForm();
+            Application.Run(new Splash());
+
     }
+}
 }

@@ -1,6 +1,6 @@
 ﻿namespace BMICalculator
 {
-    partial class Form1
+    partial class BMICalculatorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,7 @@
             this.MetricButton = new System.Windows.Forms.RadioButton();
             this.ImperialButton = new System.Windows.Forms.RadioButton();
             this.BMITextBoxControl = new System.Windows.Forms.TextBox();
+            this.UserCondition = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // CalculateBMIButton
@@ -84,6 +85,7 @@
             this.HeightTextBox.Name = "HeightTextBox";
             this.HeightTextBox.Size = new System.Drawing.Size(114, 25);
             this.HeightTextBox.TabIndex = 8;
+            this.HeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // WeightTextBox
             // 
@@ -95,6 +97,7 @@
             this.WeightTextBox.Name = "WeightTextBox";
             this.WeightTextBox.Size = new System.Drawing.Size(114, 25);
             this.WeightTextBox.TabIndex = 9;
+            this.WeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // MetricButton
             // 
@@ -102,7 +105,7 @@
             this.MetricButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MetricButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.MetricButton.ForeColor = System.Drawing.Color.Firebrick;
-            this.MetricButton.Location = new System.Drawing.Point(46, 16);
+            this.MetricButton.Location = new System.Drawing.Point(46, 18);
             this.MetricButton.Name = "MetricButton";
             this.MetricButton.Size = new System.Drawing.Size(76, 26);
             this.MetricButton.TabIndex = 10;
@@ -116,7 +119,7 @@
             this.ImperialButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ImperialButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.ImperialButton.ForeColor = System.Drawing.Color.Firebrick;
-            this.ImperialButton.Location = new System.Drawing.Point(167, 16);
+            this.ImperialButton.Location = new System.Drawing.Point(167, 18);
             this.ImperialButton.Name = "ImperialButton";
             this.ImperialButton.Size = new System.Drawing.Size(90, 26);
             this.ImperialButton.TabIndex = 11;
@@ -127,21 +130,33 @@
             // BMITextBoxControl
             // 
             this.BMITextBoxControl.BackColor = System.Drawing.Color.Snow;
+            this.BMITextBoxControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BMITextBoxControl.Enabled = false;
-            this.BMITextBoxControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.BMITextBoxControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.BMITextBoxControl.ForeColor = System.Drawing.Color.IndianRed;
             this.BMITextBoxControl.Location = new System.Drawing.Point(31, 285);
+            this.BMITextBoxControl.Margin = new System.Windows.Forms.Padding(0);
             this.BMITextBoxControl.Multiline = true;
             this.BMITextBoxControl.Name = "BMITextBoxControl";
             this.BMITextBoxControl.ReadOnly = true;
-            this.BMITextBoxControl.Size = new System.Drawing.Size(243, 144);
+            this.BMITextBoxControl.Size = new System.Drawing.Size(243, 39);
             this.BMITextBoxControl.TabIndex = 12;
+            this.BMITextBoxControl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Form1
+            // UserCondition
+            // 
+            this.UserCondition.ForeColor = System.Drawing.Color.White;
+            this.UserCondition.Location = new System.Drawing.Point(31, 372);
+            this.UserCondition.Name = "UserCondition";
+            this.UserCondition.Size = new System.Drawing.Size(243, 38);
+            this.UserCondition.TabIndex = 13;
+            // 
+            // BMICalculatorForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(304, 441);
+            this.Controls.Add(this.UserCondition);
             this.Controls.Add(this.BMITextBoxControl);
             this.Controls.Add(this.ImperialButton);
             this.Controls.Add(this.MetricButton);
@@ -154,9 +169,10 @@
             this.ForeColor = System.Drawing.Color.Crimson;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "BMICalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMI Calculator";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BMICalculatorForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,6 +188,7 @@
         private System.Windows.Forms.RadioButton MetricButton;
         private System.Windows.Forms.RadioButton ImperialButton;
         private System.Windows.Forms.TextBox BMITextBoxControl;
+        private System.Windows.Forms.TextBox UserCondition;
     }
 }
 
