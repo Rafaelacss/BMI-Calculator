@@ -90,6 +90,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bmi-calculator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\thumbnail-fitness-classes.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

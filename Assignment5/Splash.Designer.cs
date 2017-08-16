@@ -43,8 +43,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(27, 24);
+            this.label1.ForeColor = System.Drawing.Color.IndianRed;
+            this.label1.Location = new System.Drawing.Point(25, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(267, 31);
             this.label1.TabIndex = 0;
@@ -53,8 +53,8 @@
             // Splash
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::BMICalculator.Properties.Resources.thumbnail_fitness_classes;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackgroundImage = global::BMICalculator.Properties.Resources.bmi_calculator;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(320, 480);
             this.Controls.Add(this.label1);

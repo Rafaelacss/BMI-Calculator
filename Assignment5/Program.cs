@@ -9,7 +9,7 @@ using System.Windows.Forms;
  * Student number: 300910503
  * Date: August, 15, 2017
  * Description: BMI Calculator Project - Assignment 5
- * Version: 0.2 - updated summary
+ * Version: 0.3 - modified to add splash form
  */
 
 namespace BMICalculator

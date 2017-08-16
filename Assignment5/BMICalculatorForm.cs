@@ -92,7 +92,7 @@ namespace BMICalculator
             if (Result < 18.5)
             {
                 UserCondition.Text = "You are Underweight";
-                UserCondition.BackColor = Color.DodgerBlue;
+                UserCondition.BackColor = Color.DeepSkyBlue;
             }
             else if ((Result >= 18.5) && (Result < 25))
             {
@@ -102,12 +102,12 @@ namespace BMICalculator
             else if ((Result >= 25) && (Result < 29.9))
             {
                 UserCondition.Text = "You are Overweight";
-                UserCondition.BackColor = Color.Coral;
+                UserCondition.BackColor = Color.Purple;
             }
             else
             {
                 UserCondition.Text = "You are Obese";
-                UserCondition.BackColor = Color.Red;
+                UserCondition.BackColor = Color.Coral;
             }
         }
 
