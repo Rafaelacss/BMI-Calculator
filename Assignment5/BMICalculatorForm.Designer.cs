@@ -1,4 +1,4 @@
-﻿namespace Assignment5
+﻿namespace BMICalculator
 {
     partial class Form1
     {
@@ -50,7 +50,7 @@
             this.CalculateBMIButton.TabIndex = 1;
             this.CalculateBMIButton.Text = "Calculate BMI";
             this.CalculateBMIButton.UseVisualStyleBackColor = false;
-            this.CalculateBMIButton.Click += new System.EventHandler(this.button2_Click);
+            this.CalculateBMIButton.Click += new System.EventHandler(this.CalculateBMIButton_Click);
             // 
             // Height
             // 
@@ -62,7 +62,6 @@
             this.Height.Size = new System.Drawing.Size(87, 22);
             this.Height.TabIndex = 4;
             this.Height.Text = "My height";
-            this.Height.Click += new System.EventHandler(this.label1_Click);
             // 
             // Weight
             // 
@@ -85,7 +84,6 @@
             this.HeightTextBox.Name = "HeightTextBox";
             this.HeightTextBox.Size = new System.Drawing.Size(114, 25);
             this.HeightTextBox.TabIndex = 8;
-            this.HeightTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // WeightTextBox
             // 
@@ -97,7 +95,6 @@
             this.WeightTextBox.Name = "WeightTextBox";
             this.WeightTextBox.Size = new System.Drawing.Size(114, 25);
             this.WeightTextBox.TabIndex = 9;
-            this.WeightTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // MetricButton
             // 
@@ -139,7 +136,6 @@
             this.BMITextBoxControl.ReadOnly = true;
             this.BMITextBoxControl.Size = new System.Drawing.Size(243, 144);
             this.BMITextBoxControl.TabIndex = 12;
-            this.BMITextBoxControl.TextChanged += new System.EventHandler(this.BMITextBoxControl_TextChanged);
             // 
             // Form1
             // 

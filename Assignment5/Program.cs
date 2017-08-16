@@ -7,17 +7,17 @@ using System.Windows.Forms;
 /*
  * Name: Rafaela Silveira
  * Student number: 300910503
- * Date: August, 4, 2017
- * Description: BMI Calculator Project
- * Version: 0.1 - created the project
+ * Date: August, 15, 2017
+ * Description: BMI Calculator Project - Assignment 5
+ * Version: 0.2 - updated summary
  */
 
-namespace Assignment5
+namespace BMICalculator
 {
     static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        /// The BMI Calculator will calculate the standard body mass of a person
         /// </summary>
         [STAThread]
         static void Main()
